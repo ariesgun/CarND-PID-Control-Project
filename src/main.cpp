@@ -97,7 +97,7 @@ int main() {
   });
 
   int port = 4567;
-  if (h.listen("127.0.0.1", port)) {
+  if (h.listen(port)) {
     std::cout << "Listening to port " << port << std::endl;
   } else {
     std::cerr << "Failed to listen to port" << std::endl;
