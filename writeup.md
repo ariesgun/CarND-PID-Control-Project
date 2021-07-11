@@ -16,8 +16,8 @@ D component: Using P component alone will result in overshooting. D component he
 
 The following control gains are used in this project:
 
-P: 0.1
-I: 0.002
-D: 1.0
+P: 0.15
+I: 0.0015
+D: 1.2
 
 The hyperparameters were obtain through manual tuning and lots of experimentations. I started from choosing the P value first and some random D value. Choosing high P value seems to work fine when the car speed is still low. The car starts to overshoot when its speed reaches 30 mph. After several experiments, I discovered that small P value helps to stabilize the car when its speed reaches more than 30 mph. To compensate overshoot/ oscillation, I played with several D values. With the D value of 1.0 (i.e. the ratio of D/I is 10), the car does not oscillate too much or too often.
